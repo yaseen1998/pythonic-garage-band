@@ -4,13 +4,11 @@ class Band():
     in this class we collect the team member and name of Band 
 
     """
-    all_band=[]
     instances=[]
     def __init__(self,name,members):
         self.name = name # name of band
         self.members = members # member of band
-        Band.all_band.append(self) # create list for previous member
-        Band.instances.append(self)
+        Band.instances.append(self) # create list for previous member
 
 
     def play_solos(self):
@@ -27,7 +25,7 @@ class Band():
         """
         call the previous member and name for Band
         """
-        return cls.all_band
+        return cls.instances
 
 class Musician():
     """
